@@ -1,0 +1,342 @@
+* {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.top {
+    background: rgb(70, 186, 240);
+    height: 50px;
+    width: 100vw;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    font-size: 20px;
+    align-items: center;
+}
+
+.top img {
+    height: 80%;
+}
+
+.options {
+    width: 100vw;
+    height: 100px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+}
+
+.options img {
+    height: 80%;
+}
+
+.services {
+
+    width: 70%;
+    display: inline-flex;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+.main {
+    height: 250px;
+    text-align: center;
+    background: url(./img/mainback.jpg);
+    background-position: center;
+    font-size: 25px;
+    color: rgb(132, 138, 136);
+    text-shadow: 2px 2px 2px rgb(53, 52, 52);
+    width: 100vw;
+}
+
+.main h1 {
+    font-size: 80px;
+    color: rgb(132, 138, 136);
+    text-shadow: 2px 2px 2px rgb(53, 52, 52);
+}
+
+.content {
+    width: 100vw;
+    height: 500px;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.left {
+    display: inline-block;
+    width: 30%;
+    height: 500px;
+}
+
+.information {
+    background: rgb(199, 219, 226);
+    height: 140px;
+    padding: 3%;
+    width: 80%;
+    border-radius: 15px;
+    margin: 10% auto;
+}
+
+.information h3 {
+    font-size: 30px;
+}
+
+.information p {
+    font-size: 20px;
+}
+
+.right {
+    display: inline-block;
+    width: 70%;
+    height: 500px;
+}
+
+.right-title {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 10%;
+    font-size: 30px;
+}
+
+.formain {
+    display: inline-block;
+    height: 70%;
+    width: 100%;
+    padding: 0 05%;
+
+}
+
+.first-form,
+.second-form,
+.third-form {
+    display: block;
+    width: 100%;
+    height: 15%;
+
+
+}
+
+.third-form {
+    display: inline-block;
+    height: 60%;
+
+}
+
+.formitens {
+    display: inline-block;
+    margin: 2px;
+    width: 40%;
+    border-width: 0.1px;
+    border-radius: 2px;
+    align-items: flex-end;
+
+}
+
+.formtext {
+    display: inline-block;
+    height: 60%;
+    width: 100%;
+    border-width: 0.1px;
+    border-radius: 2px;
+
+}
+
+.formbutton {
+    display: block;
+    height: auto;
+    padding: 3px 10px;
+    width: auto;
+    font-size: 15px;
+    border-width: 0;
+    border-radius: 5px;
+
+}
+
+.down {
+    height: 300px;
+    display: inline-flex;
+    justify-content: space-around;
+    background-image: url(./img/footerback.jpg);
+    background-position: center;
+
+}
+
+.leftfooter {
+    display: inline-block;
+    width: 30%;
+    height: 300px;
+    padding: 5px;
+    font-size: 20px;
+
+}
+
+.leftfooter h3 {
+    padding-bottom: 10px;
+
+}
+
+.leftfooter img {
+    height: 35px;
+    padding-top: 10px;
+
+}
+
+.centralfooter {
+    display: inline-block;
+    width: 30%;
+    height: 300px
+}
+
+.central-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+.rightfooter {
+    display: inline-block;
+    width: 30%;
+    height: 300px;
+    padding: 1%;
+
+}
+
+.first-boletin,
+.second-boletin {
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+    font-size: 20px;
+
+}
+
+.boletinitens {
+    display: block;
+    width: 80%;
+    margin-bottom: 3%;
+
+}
+
+
+
+@media screen and (max-width: 1000px) and (orientation:portrait) {
+
+    header a:not(#email) {
+        display: none;
+    }
+
+    #email {
+        font-size: 4vw;
+    }
+
+    header img {
+        height: 5px;
+        width: auto;
+    }
+
+    .options {
+        height: 200px;
+        display: block;
+        padding: 15px;
+    }
+
+    .options img {
+        height: 110px;
+    }
+
+    .services {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .content {
+        height: 800px;
+        display: inline-block;
+    }
+
+    .left {
+        width: 100%;
+        height: 400px;
+    }
+
+    .information p {
+        font-size: 16px;
+    }
+
+    .right {
+        width: 100%;
+        font-size: 16px;
+
+    }
+
+    .right input {
+        width: 70px;
+    }
+
+    .centralfooter {
+        display: none;
+    }
+
+    .leftfooter :not(h3) {
+        font-size: 10px;
+    }
+
+    .rightfooter :not(h3) {
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) and (orientation:landscape) {
+
+    .left,
+    .right {
+        width: 50%;
+        height: 400px;
+        padding: 2px;
+    }
+
+
+
+    .information p {
+        font-size: 13px;
+    }
+
+    .first-form,
+    .second-form {
+        display: inline-flex;
+        height: 7%;
+        margin: 3px;
+    }
+
+    .content {
+        height: 400px;
+    }
+
+    .down {
+        padding: 10px 0;
+    }
+
+    .down h3 {
+        font-size: 20px;
+    }
+
+    .down a, p {
+        font-size: 15px;
+    }
+
+
+}
